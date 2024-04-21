@@ -39,8 +39,7 @@
 .highscore-easy,
 .highscore-normal,
 #easy-highscores,
-#normal-highscores,
-#hard-highscores {
+#normal-highscores {
   border-right: 1px solid rgb(200,200,200);
 }
 #easy-highscores,

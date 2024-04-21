@@ -1,6 +1,6 @@
 import { timer } from "./timer.js";
 import { renderHighscores } from "./highscores.js";
-import { mySudokuSolver } from "./mySudokuSolver.js";
+import { SudokuSolver } from "./sudoku-solver.js";
 
 class Sudoku {
   board;
@@ -86,7 +86,7 @@ class Sudoku {
     const nDifficulty = this.selectedDifficulty === 'easy' 
       ? 36 : this.selectedDifficulty === 'normal' 
       ? 47 : 58;
-    const generatedSudoku = new mySudokuSolver(nDifficulty)
+    const generatedSudoku = new SudokuSolver(nDifficulty)
     this.initialTileSet = generatedSudoku.tileSet;
     this.solution = generatedSudoku.solution;
   }
