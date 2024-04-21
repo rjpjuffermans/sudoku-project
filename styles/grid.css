@@ -1,0 +1,93 @@
+.middle-section {
+  width: 38em;
+  height: 28em;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+#number-selector {
+  height: 27em;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5em;
+}
+#number-selector,
+.right{
+  margin: 0 1em;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.number-selector,
+.selected-number {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1em solid black;
+  border-radius: 0.25em;
+  user-select: none;
+  cursor: pointer;
+}
+.number-selector:hover {
+  background-color: rgb(230,230,230);
+}
+.selected-number,
+.selected-number:hover {
+  background-color: rgb(180,180,180);
+}
+
+#board {
+  width: 28em;
+  height: 28em;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+#board div {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tile-set {
+  background-color: rgba(230,230,230,0.9);
+  user-select: none;
+}
+.tile-empty,
+.tile-correct,
+.tile-incorrect,
+.tile-show-incorrect {
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 50ms;
+}
+.tile-empty:hover,
+.tile-correct:hover,
+.tile-incorrect:hover {
+  background-color: rgb(250,250,250);
+  /* outline: 1px solid lightblue; */
+} 
+.tile-show-incorrect {
+  transition: background-color 200ms;
+  background-color: rgb(255, 223, 223);
+  color: darkred;
+}
+.tile-empty {
+  background-color: white;
+  color: transparent;
+}
+.row-block-divider {
+  border-bottom: 1px solid black;
+}
+.row-divider {
+  border-bottom: 1px solid rgba(180,180,180,0.8);
+}
+.column-block-divider {
+  border-right: 1px solid black;
+}
+.column-divider {
+  border-right: 1px solid rgba(180,180,180,0.8);
+}

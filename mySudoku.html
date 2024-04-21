@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Sudoku Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/difficulty.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/timer-highscore.css">
+    <link rel="stylesheet" href="styles/game-controls.css">
+  </head>
+  <body>
+    <header class="header">
+    </header>
+    <section class="new-game-section">
+      <div class="left-new-game-section"></div>
+      <div class="middle-new-game-section"></div>
+      <div class="right-new-game-section"></div>
+    </section>
+    <main>
+      <div class="left-section">
+      </div>
+      <div class="middle-section">
+        <div id="number-selector"></div>
+        <section id="board"></section>
+        <div class="right"></div>
+      </div>
+      <div class="right-section">
+        <div>
+          <div class="timer-text">Time</div>
+          <div id="timer">00:00</div>
+        </div>
+        <div>
+          <div class="highscore-text">Highscores</div>
+          <div id="highscores"></div>
+        </div>
+      </div>
+    </main>
+    <section id="game-controls">
+    </section>
+    <script type="module" src="/scripts/mySudoku.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+* {
+  font-family: Roboto, Arial;
+  margin: 0;
+  text-align: center;
+}
+/* body {
+  height: 3000px;
+} */
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2.5em;
+}

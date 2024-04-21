@@ -1,0 +1,60 @@
+.left-section {
+  flex: 1;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.timer-text,
+.highscore-text {
+  font-size: 1.8em;
+  font-weight: 700;
+  background-color: rgb(220,220,220);
+  border: 1px solid rgb(200,200,200);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#timer {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-bottom: 1em;
+  border: 1px solid rgb(200,200,200);
+  border-top: none;
+  padding: 0.25em 0;
+}
+
+#highscores {
+  font-size: 1.4em;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgb(200,200,200);
+  border-top: none;
+  padding: 0.25em 0.25em;
+  margin-bottom: 1em;
+}
+.highscore-easy,
+.highscore-normal,
+#easy-highscores,
+#normal-highscores,
+#hard-highscores {
+  border-right: 1px solid rgb(200,200,200);
+}
+#easy-highscores,
+#normal-highscores,
+#hard-highscores {
+  border-bottom: 1px solid rgb(200,200,200);
+  font-weight: 500;
+}
+.highscore-easy,
+.highscore-normal,
+.highscore-hard {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: rgb(50,50,50);
+}
+
+
