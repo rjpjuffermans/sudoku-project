@@ -104,7 +104,7 @@ class Sudoku {
     }
     this.tileSelected = tile;
     this.tileSelected.classList.add('selected-tile');
-    if (this.numberSelected && this.initialTileSet) {
+    if (this.numberSelected && this.initialTileSet && !this.tileSelected.classList.contains('tile-set')) {
       this.tileSelected.innerText = this.numberSelected.innerText;
       this.tileSelected.classList.remove('tile-empty')
       const coords = this.tileSelected.id.match(/\d/g);
